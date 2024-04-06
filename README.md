@@ -1,6 +1,6 @@
-# eslint-plugin-custom
+# eslint-plugin-no-temp
 
-The `eslint-plugin-custom` is designed to help developers maintain clean and production-ready code by enforcing best practices and preventing certain patterns from being committed. This plugin includes rules such as disallowing temporary code snippets that are marked with a `@temp` comment tag.
+The `eslint-plugin-no-temp` is designed to help developers maintain clean and production-ready code by enforcing best practices and preventing certain patterns from being committed. This plugin includes rules such as disallowing temporary code snippets that are marked with a `@temp` comment tag.
 
 ## Installation
 
@@ -10,10 +10,10 @@ Before you start, ensure you have [ESLint](http://eslint.org) installed in your 
 npm install eslint --save-dev
 ```
 
-To use the eslint-plugin-custom in your project, you'll need to install it via npm. If it's hosted on a registry, use:
+To use the eslint-plugin-no-temp in your project, you'll need to install it via npm. If it's hosted on a registry, use:
 
 ```bash
-npm install eslint-plugin-custom --save-dev
+npm install eslint-plugin-no-temp --save-dev
 
 ```
 
@@ -23,7 +23,7 @@ Add custom to the plugins section of your ESLint configuration file (.eslintrc.j
 ```json
 {
   "plugins": [
-    "custom"
+    "no-temp"
   ]
 }
 ```
@@ -32,7 +32,7 @@ Then configure the rules you wish to use under the rules section:
 ```json
 {
   "rules": {
-    "custom/no-temp-comments": "error"
+    "no-temp/no-temp-comments": "error"
   }
 }
 ```
@@ -61,7 +61,7 @@ const permanentFix = () => {
 - **no-temp-comments**: Prevents code marked as temporary (using the @temp tag in comments) from being committed. This encourages developers to review or remove temporary code snippets before pushing changes.
 
 ## Contributing
-Contributions to `eslint-plugin-custom` are always welcome, whether it be improvements to the documentation, bug fixes, or new features.
+Contributions to `eslint-plugin-no-temp` are always welcome, whether it be improvements to the documentation, bug fixes, or new features.
 
 ## License
 This project is licensed under the MIT License.
