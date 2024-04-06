@@ -1,11 +1,31 @@
 {
   "name": "eslint-plugin-no-temp",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "An ESLint plugin to enforce code quality by preventing temporary `@temp` tagged comments and patterns from being committed.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/besrabasant/eslint-plugin-no-temp.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "temp",
+    "comments",
+    "code quality"
+  ],
+  "author": "Basant Besra <besrabasant@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
 }
